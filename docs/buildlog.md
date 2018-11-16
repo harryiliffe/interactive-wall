@@ -35,4 +35,16 @@ A more interesting layout, much less grid like.
 ![paper8](assets/paper8.jpg)
 To add more information I could add a flap system.
 
+
+
+## Electronics
 To allow for modularity the wall is designed into sections each stemming off a node. Each node will contain a micro-controller and communicate with the base node.
+
+![electronics3](assets/electronics3.jpg)
+### Proof of Concept
+For a proof of concept, I used 3 Arduino Unos and wrote some [code (basic i2c)](https://github.com/harryiliffe/interactive-wall/tree/master/code/testing/basic%20i2c).
+The Arduinos communicate through i2c which allows for 2 way communication for the LEDs and buttons.
+![electronics1](assets/electronics1.jpg)
+![electronics2](assets/electronics2.jpg)
+
+The proof of concept worked really well and with a little bit more work I will be able to create an easy to read library for communicating between the Central Node and the Nodes.
