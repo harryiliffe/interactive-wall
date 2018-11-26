@@ -38,13 +38,24 @@ To add more information I could add a flap system.
 
 
 ## Electronics
-To allow for modularity the wall is designed into sections each stemming off a node. Each node will contain a micro-controller and communicate with the base node.
+
+### Selecting a method
+#### Node Based Micro-controllers
+To allow for modularity the wall could be designed into sections each stemming off a node. Each node will contain a micro-controller and communicate with the base node.
 
 ![electronics3](assets/electronics3.jpg)
-### Proof of Concept
+##### Proof of Concept
 For a proof of concept, I used 3 Arduino Unos and wrote some [code (basic i2c)](https://github.com/harryiliffe/interactive-wall/tree/master/code/testing/basic%20i2c).
 The Arduinos communicate through i2c which allows for 2 way communication for the LEDs and buttons.
 ![electronics1](assets/electronics1.jpg)
 ![electronics2](assets/electronics2.jpg)
 
 The proof of concept worked really well and with a little bit more work I will be able to create an easy to read library for communicating between the Central Node and the Nodes.
+
+#### Hub Based Micro-controllers
+A different, cheaper way of designing the system would be to have a single micro-controller in the hub with wires running to each button to allow for the Buttons and LEDs. Although this will mean a lot of wires running from the hub it will make a number of things easier.
+
+##### Proof of Concept
+A major concern with this design is that the capacitive touch and LEDs will not work at the maximum distance. To test this I got a 4.5m wire.
+![electronics4](assets/electronics4.jpg)
+The Capacitive touch worked well.
