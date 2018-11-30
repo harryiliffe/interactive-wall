@@ -1,0 +1,19 @@
+title: Interactive Wall
+description: The build process and design documentation for a modular interactive wall
+show_downloads: true
+google_analytics:
+
+include: ["_pages"]
+permalink: /:title/
+
+# sections: [
+#     ['research', 'Research'],
+#     ['ideation', 'Ideation'],
+#     ['presentations', 'Presentations'],
+#     ['development', 'Development'],
+#     ['assembly', 'Assembly']
+#
+# ]
+
+
+imageurl: "/interactive-wall/assets/img/"
