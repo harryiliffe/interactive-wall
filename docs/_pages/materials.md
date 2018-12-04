@@ -2,19 +2,17 @@
 title: "List of Materials"
 layout: default
 ---
-
-# Build Log
-
-What follows will hopefully be an unpretty flow of ideas that will eventually come together to form an interactive wall. Fingers crossed :)
-HELLO
+## List of Materials
+### Sheet Materials
  * Plywood (12mm)
  * Acrylic (Clear Green Edge 3mm)
- * FR4
- * Wires
- * Copper or Aluminium Foil (Self-Adhesive)
+ * FR1 (Single Sided Copper Board)
+ * Copper Foil (Self-Adhesive)
  * Vinyl (Colours TBC)
 
-
+### Electronics
  * ESP32
  * MPR121
  * LEDs (WS2812B)
+ * JST Connectors
+ * Wires (0.12mm from jaycar)
