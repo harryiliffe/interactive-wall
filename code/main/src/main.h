@@ -58,6 +58,7 @@ bool asked;
 //DEFINE STRUCTURES
 struct hubs {
   CRGB leds[BUTTONS_PER_HUB*LEDS_PER_BUTTON];
+  unsigned long flashTimer[BUTTONS_PER_HUB*LEDS_PER_BUTTON];
 };
 
 struct buttons {
@@ -76,8 +77,6 @@ struct buttons {
 };
 
 struct ColourStates {
-  CRGB before;
-  CRGB after;
   CRGB buttonBefore;
   CRGB buttonAfter;
   CRGB buttonOn;
@@ -102,6 +101,10 @@ int checkMode();
 
 void updateButtons(int buttonID, bool pushed);
 
-void lightParent(int buttonID, CRGB colour, bool first);
-void lightChild(int buttonID, CRGB colour, bool first);
+void lightParent(int buttonID, CRGB colour, bool first, bool iteractive);
+void lightChild(int buttonID, CRGB colour, bool first,bool iteractive);
 void lightButton(int buttonID, CRGB colour);
+
+void flashParent(int buttonID, CRGB colour, bool first, bool iteractive);
+void flashChild(int buttonID, CRGB colour, bool first, bool iteractive);
+void flashButton(int buttonID, CRGB colour);
