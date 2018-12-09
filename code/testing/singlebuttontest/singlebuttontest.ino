@@ -22,15 +22,15 @@
 #define _BV(bit) (1 << (bit))
 #endif
 
-#define MPR121_I2CADDR_DEFAULT 0x5A ///< default I2C address
+#define MPR121_I2CADDR_DEFAULT 0x5B ///< default I2C address
 // You can have up to 4 on one i2c bus but one is enough for testing!
-
+#define HUBS 2
 
 // Keeps track of the last pins touched
 // so we know when buttons are 'released'
-uint16_t lasttouched = 0;
-uint16_t currtouched = 0;
-int8_t _i2caddr;
+uint16_t lasttouched[HUBS];
+uint16_t currtouched[HUBS];
+int8_t _i2caddr[HUBS];
 
 enum {
   MPR121_TOUCHSTATUS_L = 0x00,
@@ -118,7 +118,7 @@ void loop() {
 
 
 bool begin(uint8_t i2caddr, int sda, int scl){
-  Wire.begin(sda, scl);
+  Wire.begin();
     
   _i2caddr = i2caddr;
 
