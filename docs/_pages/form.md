@@ -9,7 +9,7 @@ When I came into the project the initial concept was to have individual button m
 
 Harry's form development work:
 
-![paper1]({{imageurl}}paper1.jpg)
+![paper1]({{ site.imageurl }}paper1.jpg)
 
 
 I spent time sketching and designing for this concept (insert images) but I kept running into problems.
