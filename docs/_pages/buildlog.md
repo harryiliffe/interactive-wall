@@ -25,8 +25,8 @@ Here at Fab Lab WGTN we see a lot of new people every year and these people, don
 
 ## Paper Prototyping
 
-![paper1]({{imageurl}}/paper1.jpg)
-![paper2]({{imageurl}}/paper2.jpg)
+![paper1]({{site.imageurl}}/paper1.jpg){: .img-fluid}
+![paper2]({{site.imageurl}}/paper2.jpg){: .img-fluid}
 
 Above is some images of the paper prototyping we did.
 Both Liz and I quite like the layout shown in the photo as it can be nicely divided into different sections.
@@ -34,15 +34,17 @@ Both Liz and I quite like the layout shown in the photo as it can be nicely divi
 ### Button Style
 
 Trying out different button styles.
-![paper6]({{imageurl}}/paper6.jpg)
+![paper6]({{site.imageurl}}/paper6.jpg){: .img-fluid}
 
 The small dark circles are the pushable buttons.
-![paper3]({{imageurl}}/paper3.jpg)
-![paper4]({{imageurl}}/paper4.jpg)
+![paper3]({{site.imageurl}}/paper3.jpg){: .img-fluid}
+![paper4]({{site.imageurl}}/paper4.jpg){: .img-fluid}
 A more interesting layout, much less grid like.
 
-![paper5]({{imageurl}}/paper5.jpg)
-![paper7]({{imageurl}}/paper7.jpg)
+![paper5]({{site.imageurl}}/paper5.jpg){: .img-fluid}
+![paper7]({{site.imageurl}}/paper7.jpg){: .img-fluid}
 
-![paper8]({{imageurl}}/paper8.jpg)
+![paper8]({{site.imageurl}}/paper8.jpg){: .img-fluid}s
 To add more information I could add a flap system.
+
+##

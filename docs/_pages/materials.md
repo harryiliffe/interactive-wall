@@ -11,8 +11,8 @@ layout: default
  * Vinyl (Colours TBC)
 
 ### Electronics
- * ESP32
- * MPR121
- * LEDs (WS2812B)
+ * [Wemos Lolin32 Lite (ESP32 based)](https://wiki.wemos.cc/products:lolin32:lolin32_lite)
+ * MPR121 (Capacitive Touch Board)
+ * [LEDs (WS2812B)](https://www.seeedstudio.com/document/pdf/WS2812B%20Datasheet.pdf)
  * JST Connectors
- * Wires (0.12mm from jaycar)
+ * Wires
