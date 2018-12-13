@@ -3,47 +3,34 @@
 hubs hub[NUM_HUBS];
 
 // int buttonID; int nodeID; bool active; bool state; bool registered;  int parentID[3]; int childID[3]; int parentSectionID; int childSectionID;
-// buttons button[NUM_HUBS*NUM_BUTTONS] = {
-//   {0, 0, 1, 0, 0, {-1,-1,-1}, {1,-1,-1}, -1, -1},
-//   {1, 0, 1, 0, 0, {0,-1,-1}, {2,-1,-1}, -1, -1},
-//   {2, 0, 1, 0, 0, {1,-1,-1}, {3,-1,-1}, -1, -1},
-//   {3, 0, 1, 0, 0, {2,-1,-1}, {4,-1,-1}, -1, -1},
-//   {4, 0, 1, 0, 0, {3,-1,-1}, {5,-1,-1}, -1, -1},
-//   {5, 0, 1, 0, 0, {4,-1,-1}, {6,-1,-1}, -1, -1},
-//   {6, 0, 1, 0, 0, {5,-1,-1}, {7,-1,-1}, -1, -1},
-//   {7, 0, 1, 0, 0, {6,-1,-1}, {8,-1,-1}, -1, -1},
-//   {8, 0, 1, 0, 0, {7,-1,-1}, {9,-1,-1}, -1, -1},
-//   {9, 0, 1, 0, 0, {8,-1,-1}, {10,-1,-1}, -1, -1},
-//   {10, 0, 1, 0, 0, {9,-1,-1}, {11,-1,-1}, -1, -1},
-//   {11, 0, 1, 0, 0, {10,-1,-1}, {-1,-1,-1}, -1, -1},
-// };
+
 
 buttons button[NUM_HUBS*NUM_BUTTONS] = {
-  {0, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {1, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {2, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {3, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {4, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {5, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {6, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {7, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {8, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {9, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {10, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {11, 0, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-
-  {12, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {13, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {14, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {15, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {16, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {17, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {18, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {19, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {20, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {21, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {22, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
-  {23, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1}
+  {0, 0, 1, 0, 0, 0, 0, 8, {1,-1,-1}, {2,-1,-1}, -1, -1},
+  {1, 0, 0, 0, 0, 0, 8, 6, {-1,-1,-1}, {0,-1,-1}, 0, -1},
+  {2, 0, 0, 0, 0, 0, 14, 6, {0,-1,-1}, {-1,-1,-1}, -1, 4},
+  {3, 0, 0, 0, 0, 0, 20, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {4, 0, 0, 0, 0, 0, 26, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {5, 0, 0, 0, 0, 0, 32, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {6, 0, 0, 0, 0, 0, 38, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {7, 0, 0, 0, 0, 0, 44, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {8, 0, 0, 0, 0, 0, 50, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {9, 0, 0, 0, 0, 0, 56, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {10, 0, 0, 0, 0, 0, 62, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {11, 0, 0, 0, 0, 0, 68, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  //
+  // {12, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {13, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {14, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {15, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {16, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {17, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {18, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {19, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {20, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {21, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {22, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  // {23, 1, 1, 0, 0, {-1,-1,-1}, {-1,-1,-1}, -1, -1}
 };
 
 //  ColourStates CRGB buttonBefore; CRGB buttonAfter;  CRGB buttonOn;  CRGB idle; CRGB off;
@@ -54,12 +41,13 @@ ColourStates colour = {CRGB::Green, CRGB::Blue, CRGB::White, CRGB::White, CRGB::
 void setup(){
   Serial.begin(115200);
   pinMode(CONFIGARATIONPIN, INPUT_PULLDOWN);
-  initLEDS();
-  initCapSensors();
 
+  initCapSensors();
+  initLEDS();
 }
 
 void initLEDS(){
+  FastLED.setBrightness(30);
   if(NUM_HUBS>0){
     FastLED.addLeds<WS2812B,LEDPIN1, GRB>(hub[0].leds, (BUTTONS_PER_HUB*LEDS_PER_BUTTON));
     if(DEBUG){Serial.println("Initialising LEDs on HUB 0");}
@@ -103,8 +91,7 @@ void initCapSensors(){
         Serial.println(" not found, check wiring?");
       }
       flag=true;
-    }
-    if(DEBUG){
+    } else if(DEBUG){
       Serial.print("MPR121 at ");
       Serial.print(capSensorAddr[i],16);
       Serial.println(" found!");
@@ -116,12 +103,13 @@ void initCapSensors(){
 
 void loop(){
   // if(DEBUG){Serial.println("LOOPING");}
-  delay(200);
+  delay(40);
   mode = checkMode();
   getButtonStates();
   if(mode == M_CONFIG){
     configure();
   }
+  FastLED.show();
 }
 
 void getButtonStates(){
@@ -152,8 +140,10 @@ void getButtonStates(){
 
 int checkMode(){
   if(digitalRead(CONFIGARATIONPIN)){
+    digitalWrite(22, HIGH);
     return  M_CONFIG;
   } else {
+    digitalWrite(22, LOW);
     return M_INTERACTIVE;
   }
 }
@@ -167,6 +157,7 @@ void configure(){
       configureButton = -1;
       configureChild = -1;
       configureParent = -1;
+      fill_all(true);
       break;
     case C_WAITING:
       if(!asked){
@@ -180,84 +171,54 @@ void configure(){
       }
       break;
     case C_PARENTS:
-
-
       if(!asked){
         Serial.println("Click the parent buttons now. And click the main button to confirm.");
         asked = true;
+        lightParent(configureButton, colour.buttonBefore, true, false, -1);
+        lightButton(configureButton, colour.buttonOn);
+
       } else if (configureParent == configureButton){
-        configureMode = C_CHILDREN;
+        configureMode = C_INACTIVE;
         asked = false;
         Serial.println("Finished Selecting Parents.");
       } else if (configureParent != -1){
-        configureAdded = false;
         Serial.print("Parent Array: [");
+        configureAdded = false;
         for(int i = 0; i<MAX_PARENT_CHILD; i++){
-          if (button[configureButton].parentID[i] == configureParent){ //remove button if pushed twice
+          if (button[configureButton].parentID[i] == configureParent && button[configureButton].parentID[i] != -1){ //remove button if pushed twice
             for(int l = 0; l<MAX_PARENT_CHILD; l++){
               if (button[configureParent].childID[l] == configureParent){
                 button[configureParent].childID[l] = -1;
                 break;
               }
             }
-            configureAdded = true;
+            lightButton(configureParent, colour.off);
             button[configureButton].parentID[i] = -1;
-            configureChild = -1;
-          } else if (button[configureButton].parentID[i] == -1 && !configureAdded){ //addd buttonID to parentArray
+            configureAdded = true;
+          }
+        }
+        for(int i = 0; i<MAX_PARENT_CHILD; i++){
+          if (button[configureButton].parentID[i] == -1 && !configureAdded){ //add buttonID to parentArray
             for(int l = 0; l<MAX_PARENT_CHILD; l++){
               if (button[configureParent].childID[l] == -1){
                 button[configureParent].childID[l] = configureButton;
                 break;
               }
             }
-            configureAdded = true;
+
             button[configureButton].parentID[i] = configureParent;
-            configureParent = -1;
+            lightParent(configureButton, colour.buttonBefore, true, false, -1);
+            configureAdded = true;
           }
           Serial.print(button[configureButton].parentID[i]);
           Serial.print(", ");
         }
+
+        configureParent = -1;
         Serial.println("]");
       }
-      flashButton(configureButton, colour.buttonOn);
-      flashParent(configureButton, colour.buttonBefore, true, false);
-      break;
-    case C_CHILDREN:
-      if(!asked){
-        Serial.println("Click the child buttons now. And click the main button to confirm.");
-        asked = true;
-      } else if (configureChild != -1){
-        configureAdded = false;
-        Serial.print("Child Array: [");
-        for(int i = 0; i<MAX_PARENT_CHILD; i++){
-          if (button[configureButton].childID[i] == configureChild){ //remove button if pushed twice
-            for(int l = 0; l<MAX_PARENT_CHILD; l++){
-              if (button[configureChild].parentID[l] == configureButton){
-                button[configureChild].parentID[l] = -1;
-                break;
-              }
-            }
-            configureAdded = true;
-            button[configureButton].childID[i] = -1;
-            configureChild = -1;
-          } else if (button[configureButton].childID[i] == -1 && !configureAdded){ //addd buttonID to parentArray
-            for(int l = 0; l<MAX_PARENT_CHILD; l++){
-              if (button[configureChild].parentID[l] == -1){
-                button[configureChild].parentID[l] = configureButton;
-                break;
-              }
-            }
-            configureAdded = true;
-            button[configureButton].childID[i] = configureChild;
-            configureChild = -1;
-          }
-          Serial.print(button[configureButton].childID[i]);
-          Serial.print(", ");
-        }
-        Serial.println("]");
-      }
-      flashButton(configureButton, colour.buttonOn);
-      flashChild(configureButton, colour.buttonAfter, true, false);
+      // lightButton(configureButton, colour.buttonOn);
+      // lightParent(configureButton, colour.buttonBefore, true, false);
       break;
   }
 }
@@ -267,13 +228,11 @@ void updateButtons(int buttonID, bool pushed){
   switch(mode){
     case M_INTERACTIVE:
       if(pushed){
+        fill_all(false);
+        button[buttonID].on = true;
         lightButton(buttonID, colour.buttonOn);
-        lightParent(buttonID, colour.buttonBefore, true, true);
-        lightChild(buttonID, colour.buttonAfter, true, true);
-      } else {
-        lightButton(buttonID, colour.off);
-        lightParent(buttonID, colour.off, true, true);
-        lightChild(buttonID, colour.off, true, true);
+        lightParent(buttonID, colour.buttonBefore, true, true, -1);
+        lightChild(buttonID, colour.buttonAfter, true, true, -1);
       }
       break;
     case M_CONFIG:
@@ -284,35 +243,32 @@ void updateButtons(int buttonID, bool pushed){
             break;
           case C_PARENTS:
             if(buttonID == configureButton){ //confirm
-              configureMode = C_CHILDREN;
+              configureMode = C_INACTIVE;
               asked = false;
               Serial.println("Finished Selecting Parents.");
             } else {
               configureParent = buttonID;
             }
             break;
-          case C_CHILDREN:
-            if(buttonID == configureButton){ //confirm
-              configureMode = C_INACTIVE;
-              asked = false;
-              Serial.println("Finished Selecting Children.");
-            } else {
-              configureChild = buttonID;
-            }
-            break;
-          }
         }
       break;
+    }
   }
 }
 
-void lightParent(int buttonID, CRGB colour, bool first, bool iteritive){
-  if(!first){lightButton(buttonID, colour);
-  if(DEBUG){Serial.print("Lighting Parent: ");Serial.println(buttonID);}} //light current button
+void lightParent(int buttonID, CRGB colour, bool first, bool iteritive, int calledFrom){
+  if(!first){ //light current button
+    if(button[buttonID].ledBar){
+      lightBar(buttonID, colour, -1, button[calledFrom].childBarEnd);
+    } else {
+      lightButton(buttonID, colour);
+    }
+    // if(DEBUG){Serial.print("Lighting Parent: ");Serial.println(buttonID);}
+  }
   for(int l=0; l<MAX_PARENT_CHILD;l++){
     if (button[buttonID].parentID[l] != -1){
       if(iteritive){
-        lightParent(button[button[buttonID].parentID[l]].ID, colour, false, true);
+        lightParent(button[button[buttonID].parentID[l]].ID, colour, false, true, buttonID);
       } else {
         lightButton(button[button[buttonID].parentID[l]].ID, colour);
       }
@@ -320,31 +276,64 @@ void lightParent(int buttonID, CRGB colour, bool first, bool iteritive){
   }
 }
 
-void lightChild(int buttonID, CRGB colour, bool first, bool iterative){
-  if(!first){lightButton(buttonID, colour);
-  if(DEBUG){Serial.print("Lighting Child: ");Serial.println(buttonID);}} //light current button
+void lightChild(int buttonID, CRGB colour, bool first, bool iterative, int calledFrom){
+  if(!first){  //light current button
+    if(button[buttonID].ledBar){
+      lightBar(buttonID, colour, button[calledFrom].parentBarStart, -1);
+    } else {
+      lightButton(buttonID, colour);
+    }
+    // if(DEBUG){Serial.print("Lighting Child: ");Serial.println(buttonID);}
+  }
   for(int l=0; l<MAX_PARENT_CHILD;l++){
     if (button[buttonID].childID[l] != -1){
       if(iterative){
-        lightChild(button[button[buttonID].childID[l]].ID, colour, false, true);
+        lightChild(button[button[buttonID].childID[l]].ID, colour, false, true, buttonID);
       } else {
         lightButton(button[button[buttonID].childID[l]].ID, colour);
+        if(button[button[buttonID].childID[l]].ledBar){
+          lightBar(buttonID, colour, button[buttonID].parentBarStart, -1);
+        }
       }
     }
   }
 }
 
 void lightButton(int buttonID, CRGB colour){
-  if(DEBUG){Serial.print("Lighting Button: ");Serial.print(buttonID);Serial.print(".   LED NUM: ");Serial.println((buttonID%BUTTONS_PER_HUB));}
-  for(int i=0;i<LEDS_PER_BUTTON;i++){
-    hub[button[buttonID].nodeID].leds[(buttonID%BUTTONS_PER_HUB)+i] = colour;
+  if(DEBUG){Serial.print("Lighting Button: ");Serial.println(buttonID);}
+  for(int i=0;i<button[buttonID].numLEDS;i++){
+    hub[button[buttonID].nodeID].leds[button[buttonID].ledIndex+i] = colour;
+  }
+  FastLED.show();
+}
+
+void lightBar(int buttonID, CRGB colour, int start, int end){
+  if(end==-1){
+    for(int l=0;l<MAX_PARENT_CHILD;l++){
+      if (button[buttonID].childID[l] != -1 && button[button[buttonID].childID[l]].childBarEnd>end){
+        end = button[button[buttonID].childID[l]].childBarEnd;
+      }
+    }
+  }
+  if(start==-1){
+    for(int l=0;l<MAX_PARENT_CHILD;l++){
+      if (button[buttonID].parentID[l] != -1 && button[button[buttonID].parentID[l]].parentBarStart>start){
+        start = button[button[buttonID].parentID[l]].parentBarStart;
+      }
+    }
+  }
+  if(DEBUG){Serial.print("Lighting Bar: ");Serial.print(buttonID);Serial.print("   From ");Serial.print(start);Serial.print(" to ");Serial.println(end);}
+  for(int i=start;i<end;i++){
+    hub[button[buttonID].nodeID].leds[button[buttonID].ledIndex+i] = colour;
   }
   FastLED.show();
 }
 
 void flashParent(int buttonID, CRGB colour, bool first, bool iteritive){
-  if(!first){lightButton(buttonID, colour);
-  if(DEBUG){Serial.print("Lighting Parent: ");Serial.println(buttonID);}} //light current button
+  if(!first){ //light current button
+    lightButton(buttonID, colour);
+    // if(DEBUG){Serial.print("Lighting Parent: ");Serial.println(buttonID);}
+  }
   for(int l=0; l<MAX_PARENT_CHILD;l++){
     if (button[buttonID].parentID[l] != -1){
       if(iteritive){
@@ -357,8 +346,10 @@ void flashParent(int buttonID, CRGB colour, bool first, bool iteritive){
 }
 
 void flashChild(int buttonID, CRGB colour, bool first, bool iterative){
-  if(!first){lightButton(buttonID, colour);
-  if(DEBUG){Serial.print("Lighting Child: ");Serial.println(buttonID);}} //light current button
+  if(!first){   //light current button
+    lightButton(buttonID, colour);
+    // if(DEBUG){Serial.print("Lighting Child: ");Serial.println(buttonID);}
+  }
   for(int l=0; l<MAX_PARENT_CHILD;l++){
     if (button[buttonID].childID[l] != -1){
       if(iterative){
@@ -371,16 +362,22 @@ void flashChild(int buttonID, CRGB colour, bool first, bool iterative){
 }
 
 void flashButton(int buttonID, CRGB colour){
-  for(int i=0;i<LEDS_PER_BUTTON;i++){
-    if(millis() - hub[button[buttonID].nodeID].flashTimer[(buttonID%BUTTONS_PER_HUB)+i] > 300){
-      hub[button[buttonID].nodeID].flashTimer[(buttonID%BUTTONS_PER_HUB)+i] = millis();
-      Serial.println("flashing LED");
-      if(hub[button[buttonID].nodeID].leds[(buttonID%BUTTONS_PER_HUB)+i] == colour){
-        hub[button[buttonID].nodeID].leds[(buttonID%BUTTONS_PER_HUB)+i] = CRGB::Black;
+  for(int i=0;i<button[buttonID].numLEDS;i++){
+    if(millis() - hub[button[buttonID].nodeID].flashTimer[button[buttonID].ledIndex+i] > 300){
+      hub[button[buttonID].nodeID].flashTimer[button[buttonID].ledIndex+i] = millis();
+      if(hub[button[buttonID].nodeID].leds[button[buttonID].ledIndex+i] == colour){
+        hub[button[buttonID].nodeID].leds[button[buttonID].ledIndex+i] = CRGB::Black;
       } else {
-        hub[button[buttonID].nodeID].leds[(buttonID%BUTTONS_PER_HUB)+i] = colour;
+        hub[button[buttonID].nodeID].leds[button[buttonID].ledIndex+i] = colour;
       }
     }
   }
   FastLED.show();
+}
+
+void fill_all(bool show){
+  for(int i=0;i<NUM_HUBS;i++){
+    fill_solid(hub[i].leds, NUM_BUTTONS*LEDS_PER_BUTTON, CRGB::Black);
+  }
+  if(show){FastLED.show();}
 }

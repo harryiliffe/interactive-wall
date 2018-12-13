@@ -4,17 +4,28 @@
 #define FASTLED_ALLOW_INTERRUPTS 0 //NEEDED TO PREVENT ESP32 PANICING
 #include <FastLED.h>
 
+
+//Edit these
+
+#define NUM_HUBS 1
+#define NUM_BUTTONS 12*NUM_HUBS
+#define LEDS_PER_BUTTON 8
+#define MAX_PARENT_CHILD 3
+
+#define DEBUG true
+
+
 #define BUTTONS_PER_HUB 12
 
-#define i2cSDA 16
-#define i2cSCL 17
+#define i2cSDA 19
+#define i2cSCL 23
 
-#define LEDPIN1 5
+#define LEDPIN1 0
 #define LEDPIN2 2
-#define LEDPIN3 3
-#define LEDPIN4 4
+#define LEDPIN3 15
+#define LEDPIN4 13
 
-#define CONFIGARATIONPIN 22
+#define CONFIGARATIONPIN 32
 
 //CONFIGURE MODES
 #define C_INACTIVE 0
@@ -25,15 +36,6 @@
 //MOOD DEFINITIONS
 #define M_INTERACTIVE 0
 #define M_CONFIG 1
-
-//Edit these
-
-#define NUM_HUBS 2
-#define NUM_BUTTONS 12*NUM_HUBS
-#define LEDS_PER_BUTTON 1
-#define MAX_PARENT_CHILD 3
-
-#define DEBUG true
 
 
 //PIN CONFIGARATIONS
@@ -65,15 +67,20 @@ struct buttons {
   int ID;
   int nodeID;
 
-  bool active;
+  bool ledBar;
+
+  bool on;
   bool state;
   bool registered;
   // CRGB colours[LEDS_PER_BUTTON];
 
+  int ledIndex;
+  int numLEDS;
+
   int parentID[MAX_PARENT_CHILD];
   int childID[MAX_PARENT_CHILD];
-  int parentSectionID;
-  int childSectionID;
+  int parentBarStart;
+  int childBarEnd;
 };
 
 struct ColourStates {
@@ -101,10 +108,14 @@ int checkMode();
 
 void updateButtons(int buttonID, bool pushed);
 
-void lightParent(int buttonID, CRGB colour, bool first, bool iteractive);
-void lightChild(int buttonID, CRGB colour, bool first,bool iteractive);
+void lightParent(int buttonID, CRGB colour, bool first, bool iteractive, int calledFrom);
+void lightChild(int buttonID, CRGB colour, bool first,bool iteractive, int calledFrom);
 void lightButton(int buttonID, CRGB colour);
+
+void lightBar(int buttonID, CRGB colour, int start, int end);
 
 void flashParent(int buttonID, CRGB colour, bool first, bool iteractive);
 void flashChild(int buttonID, CRGB colour, bool first, bool iteractive);
 void flashButton(int buttonID, CRGB colour);
+
+void fill_all(bool show);
