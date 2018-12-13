@@ -16,3 +16,11 @@ layout: default
  * [LEDs (WS2812B)](https://www.seeedstudio.com/document/pdf/WS2812B%20Datasheet.pdf)
  * JST Connectors
  * Wires
+
+
+## Costs
+
+Below is a link to the pricing list to assembly a full interactive wall.
+This include 4 panels, 1 compute hub, 4 capacitive hubs, 24 buttons, 4 led bars, and 114 pegs.
+
+(Pricing List)[https://docs.google.com/spreadsheets/d/1MyzGQFx7wxgbCOXX1lHAo02ZbjRhZ3zoNsOl7Qcn5mM/edit?usp=sharing]
