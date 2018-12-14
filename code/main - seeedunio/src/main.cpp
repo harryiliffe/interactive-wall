@@ -6,10 +6,10 @@ hubs hub[NUM_HUBS];
 
 
 buttons button[NUM_HUBS*NUM_BUTTONS] = {
-  {0, 0, 1, 0, 0, 0, 0, 8, {1,-1,-1}, {2,-1,-1}, -1, -1},
-  {1, 0, 0, 0, 0, 0, 8, 6, {-1,-1,-1}, {0,-1,-1}, 0, -1},
-  {2, 0, 0, 0, 0, 0, 14, 6, {0,-1,-1}, {-1,-1,-1}, -1, 4},
-  {3, 0, 0, 0, 0, 0, 20, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {0, 0, 1, 0, 0, 0, 0, 8, {3,-1,-1}, {1,-1,-1}, -1, -1},
+  {1, 0, 0, 0, 0, 0, 8, 6, {0,-1,-1}, {2,-1,-1}, 4, 4},
+  {2, 0, 0, 0, 0, 0, 14, 6, {1,-1,-1}, {-1,-1,-1}, -1, -1},
+  {3, 0, 0, 0, 0, 0, 20, 6, {-1,-1,-1}, {0,-1,-1}, 0, 0},
   {4, 0, 0, 0, 0, 0, 26, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
   {5, 0, 0, 0, 0, 0, 32, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
   {6, 0, 0, 0, 0, 0, 38, 6, {-1,-1,-1}, {-1,-1,-1}, -1, -1},
@@ -40,14 +40,14 @@ ColourStates colour = {CRGB::Green, CRGB::Blue, CRGB::White, CRGB::White, CRGB::
 
 void setup(){
   Serial.begin(115200);
-  pinMode(CONFIGARATIONPIN, INPUT_PULLDOWN);
+  pinMode(CONFIGARATIONPIN, INPUT_PULLUP);
 
   initCapSensors();
   initLEDS();
 }
 
 void initLEDS(){
-  FastLED.setBrightness(30);
+  FastLED.setBrightness(255);
   if(NUM_HUBS>0){
     FastLED.addLeds<WS2812B,LEDPIN1, GRB>(hub[0].leds, (BUTTONS_PER_HUB*LEDS_PER_BUTTON));
     if(DEBUG){Serial.println("Initialising LEDs on HUB 0");}
