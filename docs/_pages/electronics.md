@@ -3,7 +3,7 @@ title: "Electronics and Code"
 layout: default
 ---
 
-## Electronics
+# Electronics
 
 ### Selecting a method
 #### Node Based Micro-controllers
@@ -55,3 +55,12 @@ The button circuit board needs to:
 * have a pad that we can attach the capacitive touch pad too.
 
 A particular challenge has been deciding between a large single circuit board or multiply smaller ones. We knew that we wanted the LEDs at the top and bottom as well as around the circle in the middle but were stuck on how to achieve this. One option is to create a circuit board that covers the whole area but this uses a lot of unnecessary material. The other option is to create smaller circuit boards and join them with wires but this will take a much longer time.
+
+## Control Module
+The control modules needs to:
+
+The first one was designed to use a esp32 dev board (specifically, the lolin32 lite). However, I think it would be better to use an atmega328p instead.
+
+!(control board)[https://github.com/harryiliffe/interactive-wall/tree/master/boards/compute%20hub%20-%20atmega/exports/computehub.png]
+
+{% include image.html id="control board" images="https://github.com/harryiliffe/interactive-wall/tree/master/boards/compute%20hub%20-%20atmega/exports/computehub.png" caption="The control board circuit" %} 

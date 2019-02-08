@@ -1,6 +1,10 @@
 ---
 title: "Build Log"
 layout: default
+
+slider0: [paper1.jpg, paper2.jpg]
+slider1: [paper6.jpg, paper3.jpg, paper4.jpg, paper5.jpg, paper7.jpg, paper8.jpg]
+slider2: [buttonfelt.jpg, buttonshiny.jpg, buttoncopper.jpg]
 ---
 
 # Build Log
@@ -25,8 +29,10 @@ Here at Fab Lab WGTN we see a lot of new people every year and these people, don
 
 ## Paper Prototyping
 
-![paper1]({{site.imageurl}}/paper1.jpg){: .img-fluid}
-![paper2]({{site.imageurl}}/paper2.jpg){: .img-fluid}
+<!-- ![paper1]({{site.imageurl}}/paper1.jpg){: .img-fluid}
+![paper2]({{site.imageurl}}/paper2.jpg){: .img-fluid} -->
+{% include imageslider.html id="slider0" url=site.imageurl images=page.slider0 %}
+
 
 Above is some images of the paper prototyping we did.
 Both Liz and I quite like the layout shown in the photo as it can be nicely divided into different sections.
@@ -34,17 +40,31 @@ Both Liz and I quite like the layout shown in the photo as it can be nicely divi
 ### Button Style
 
 Trying out different button styles.
-![paper6]({{site.imageurl}}/paper6.jpg){: .img-fluid}
+
+{% include imageslider.html id="slider1" url=site.imageurl images=page.slider1 %}
 
 The small dark circles are the pushable buttons.
-![paper3]({{site.imageurl}}/paper3.jpg){: .img-fluid}
-![paper4]({{site.imageurl}}/paper4.jpg){: .img-fluid}
 A more interesting layout, much less grid like.
-
-![paper5]({{site.imageurl}}/paper5.jpg){: .img-fluid}
-![paper7]({{site.imageurl}}/paper7.jpg){: .img-fluid}
-
-![paper8]({{site.imageurl}}/paper8.jpg){: .img-fluid}s
 To add more information I could add a flap system.
 
-##
+
+### Full scale model
+
+
+
+### More inviting
+
+After talking to Wendy (Director of Fab Lab WGTN), we decided to rethink the button module. One issue I was having is that there is not enough capacitive change for the sensor to detect after covering the copper pad with vinyl.
+We are going to re-explore the materials used, starting with a conductive material, ripstock.
+Although the ripstock fused well to felt and created a more "pushable" button, we felt it looked a little tacky.
+Stu presented us with some conduction shiny material, which, whilst cool, was a little bit too much for our plywood feel.
+We settled on exposing the copper underneath the vinyl. This will solve to conductivity issues, whilst highlighting the buttons more.
+
+{% include imageslider.html id="slider2" url=site.imageurl images=page.slider2 %}
+
+### Image resizing
+
+I have been resizing the images for this blog using sips on my mac.
+I'm putting this command here so I don't lose it again. :)
+> sips --resampleHeight 1000 *.jpg
+> sips -p 1000 1333 --padColor ffffff *.jpg 
