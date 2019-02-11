@@ -2,7 +2,7 @@
 title: "Assembly Guide"
 layout: default
 ---
-## Assembly Guide
+# Assembly Guide
 
 ### Hardware
 

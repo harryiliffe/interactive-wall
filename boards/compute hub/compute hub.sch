@@ -868,16 +868,16 @@
 <part name="ESPLEFT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X13" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="CON-HUB1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
+<part name="CON-HUB4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="CON-HUB2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
+<part name="CON-HUB3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="CON-HUB3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
+<part name="CON-HUB2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="CON-HUB4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
+<part name="CON-HUB1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="S1" library="fab" deviceset="SLIDE-SWITCH" device=""/>
@@ -904,16 +904,16 @@
 <instance part="ESPLEFT" gate="A" x="40.64" y="25.4" rot="MR0"/>
 <instance part="GND1" gate="1" x="7.62" y="10.16" rot="R270"/>
 <instance part="+3V1" gate="G$1" x="50.8" y="40.64" rot="R270"/>
-<instance part="CON-HUB1" gate="A" x="30.48" y="63.5"/>
+<instance part="CON-HUB4" gate="A" x="30.48" y="63.5"/>
 <instance part="P+1" gate="1" x="17.78" y="71.12" rot="R90"/>
 <instance part="+3V2" gate="G$1" x="17.78" y="68.58" rot="R90"/>
-<instance part="CON-HUB2" gate="A" x="50.8" y="63.5"/>
+<instance part="CON-HUB3" gate="A" x="50.8" y="63.5"/>
 <instance part="P+2" gate="1" x="38.1" y="71.12" rot="R90"/>
 <instance part="+3V3" gate="G$1" x="38.1" y="68.58" rot="R90"/>
-<instance part="CON-HUB3" gate="A" x="71.12" y="63.5"/>
+<instance part="CON-HUB2" gate="A" x="71.12" y="63.5"/>
 <instance part="P+3" gate="1" x="58.42" y="71.12" rot="R90"/>
 <instance part="+3V4" gate="G$1" x="58.42" y="68.58" rot="R90"/>
-<instance part="CON-HUB4" gate="A" x="91.44" y="63.5"/>
+<instance part="CON-HUB1" gate="A" x="91.44" y="63.5"/>
 <instance part="P+4" gate="1" x="78.74" y="71.12" rot="R90"/>
 <instance part="+3V5" gate="G$1" x="78.74" y="68.58" rot="R90"/>
 <instance part="S1" gate="G$1" x="88.9" y="30.48"/>
@@ -955,22 +955,22 @@
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="CON-HUB2" gate="A" pin="5"/>
+<pinref part="CON-HUB3" gate="A" pin="5"/>
 <wire x1="40.64" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="CON-HUB3" gate="A" pin="5"/>
+<pinref part="CON-HUB2" gate="A" pin="5"/>
 <wire x1="60.96" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="CON-HUB4" gate="A" pin="5"/>
+<pinref part="CON-HUB1" gate="A" pin="5"/>
 <wire x1="81.28" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="CON-HUB1" gate="A" pin="5"/>
+<pinref part="CON-HUB4" gate="A" pin="5"/>
 <wire x1="20.32" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -981,22 +981,22 @@
 <wire x1="43.18" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON-HUB1" gate="A" pin="2"/>
+<pinref part="CON-HUB4" gate="A" pin="2"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="20.32" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON-HUB2" gate="A" pin="2"/>
+<pinref part="CON-HUB3" gate="A" pin="2"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="40.64" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON-HUB3" gate="A" pin="2"/>
+<pinref part="CON-HUB2" gate="A" pin="2"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <wire x1="60.96" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON-HUB4" gate="A" pin="2"/>
+<pinref part="CON-HUB1" gate="A" pin="2"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="81.28" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
 </segment>
@@ -1029,22 +1029,22 @@
 <label x="48.26" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB1" gate="A" pin="3"/>
+<pinref part="CON-HUB4" gate="A" pin="3"/>
 <wire x1="27.94" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
 <label x="17.78" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB2" gate="A" pin="3"/>
+<pinref part="CON-HUB3" gate="A" pin="3"/>
 <wire x1="48.26" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
 <label x="38.1" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB3" gate="A" pin="3"/>
+<pinref part="CON-HUB2" gate="A" pin="3"/>
 <wire x1="68.58" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 <label x="58.42" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB4" gate="A" pin="3"/>
+<pinref part="CON-HUB1" gate="A" pin="3"/>
 <wire x1="88.9" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
 <label x="78.74" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -1056,92 +1056,92 @@
 <label x="48.26" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB4" gate="A" pin="4"/>
+<pinref part="CON-HUB1" gate="A" pin="4"/>
 <wire x1="88.9" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
 <label x="78.74" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB3" gate="A" pin="4"/>
+<pinref part="CON-HUB2" gate="A" pin="4"/>
 <wire x1="68.58" y1="63.5" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 <label x="58.42" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB2" gate="A" pin="4"/>
+<pinref part="CON-HUB3" gate="A" pin="4"/>
 <wire x1="48.26" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 <label x="38.1" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB1" gate="A" pin="4"/>
+<pinref part="CON-HUB4" gate="A" pin="4"/>
 <wire x1="27.94" y1="63.5" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
 <label x="17.78" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED1" class="0">
 <segment>
-<pinref part="ESPLEFT" gate="A" pin="13"/>
-<wire x1="43.18" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
-<label x="48.26" y="10.16" size="1.778" layer="95"/>
+<pinref part="ESPLEFT" gate="A" pin="10"/>
+<wire x1="43.18" y1="17.78" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
+<label x="48.26" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CON-HUB1" gate="A" pin="6"/>
-<wire x1="27.94" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
-<label x="20.32" y="58.42" size="1.778" layer="95"/>
+<wire x1="88.9" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<label x="78.74" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED2" class="0">
-<segment>
-<pinref part="ESPLEFT" gate="A" pin="12"/>
-<wire x1="43.18" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<label x="48.26" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CON-HUB2" gate="A" pin="6"/>
-<wire x1="48.26" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
-<label x="38.1" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED3" class="0">
 <segment>
 <pinref part="ESPLEFT" gate="A" pin="11"/>
 <wire x1="43.18" y1="15.24" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <label x="48.26" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CON-HUB3" gate="A" pin="6"/>
+<pinref part="CON-HUB2" gate="A" pin="6"/>
 <wire x1="68.58" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <label x="58.42" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="LED3" class="0">
+<segment>
+<pinref part="ESPLEFT" gate="A" pin="12"/>
+<wire x1="43.18" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
+<label x="48.26" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CON-HUB3" gate="A" pin="6"/>
+<wire x1="48.26" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
+<label x="38.1" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="LED4" class="0">
 <segment>
-<pinref part="ESPLEFT" gate="A" pin="10"/>
-<wire x1="43.18" y1="17.78" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
-<label x="48.26" y="17.78" size="1.778" layer="95"/>
+<pinref part="ESPLEFT" gate="A" pin="13"/>
+<wire x1="43.18" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
+<label x="48.26" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CON-HUB4" gate="A" pin="6"/>
-<wire x1="88.9" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<label x="78.74" y="58.42" size="1.778" layer="95"/>
+<wire x1="27.94" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
+<label x="20.32" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="CON-HUB1" gate="A" pin="1"/>
+<pinref part="CON-HUB4" gate="A" pin="1"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="20.32" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON-HUB2" gate="A" pin="1"/>
+<pinref part="CON-HUB3" gate="A" pin="1"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="40.64" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON-HUB3" gate="A" pin="1"/>
+<pinref part="CON-HUB2" gate="A" pin="1"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="60.96" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON-HUB4" gate="A" pin="1"/>
+<pinref part="CON-HUB1" gate="A" pin="1"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="81.28" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 </segment>
