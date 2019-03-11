@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
@@ -146,7 +146,7 @@
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="58.42" width="0" layer="20"/>
 <wire x1="-1.27" y1="58.42" x2="95.25" y2="58.41" width="0" layer="20"/>
 <wire x1="95.25" y1="58.41" x2="95.25" y2="-1.27" width="0" layer="20"/>
-<polygon width="0" layer="38">
+<polygon width="0.1" layer="38">
 <vertex x="93.98" y="52.705"/>
 <vertex x="93.98" y="34.29" curve="-90"/>
 <vertex x="90.17" y="30.48" curve="90"/>
@@ -611,10 +611,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="CON-HUB1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="36.83"/>
-<element name="CON-HUB2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="29.21"/>
-<element name="CON-HUB3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="21.59"/>
-<element name="CON-HUB4" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="13.97"/>
+<element name="CON-HUB4" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="36.83"/>
+<element name="CON-HUB3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="29.21"/>
+<element name="CON-HUB2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="21.59"/>
+<element name="CON-HUB1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06" value="" x="19.05" y="13.97"/>
 <element name="ESPLEFT" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X13" value="" x="57.15" y="12.7" rot="MR180"/>
 <element name="ESPRIGHT" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X13" value="" x="57.15" y="35.56" rot="MR180"/>
 <element name="J1" library="fab" package="JACK_2.1MM" value="JACK2.1MM" x="80.01" y="24.13" rot="R90"/>
@@ -627,10 +627,10 @@ design rules under a new name.</description>
 <contactref element="S1" pad="3"/>
 <contactref element="J1" pad="SHUNT"/>
 <contactref element="U$1" pad="1"/>
-<contactref element="CON-HUB2" pad="5"/>
 <contactref element="CON-HUB3" pad="5"/>
-<contactref element="CON-HUB4" pad="5"/>
+<contactref element="CON-HUB2" pad="5"/>
 <contactref element="CON-HUB1" pad="5"/>
+<contactref element="CON-HUB4" pad="5"/>
 <wire x1="72.39" y1="33.8328" x2="72.39" y2="35.56" width="0.6096" layer="1"/>
 <wire x1="72.39" y1="33.8328" x2="76.327" y2="29.8958" width="0.6096" layer="1"/>
 <wire x1="71.3368" y1="34.18214375" x2="70.46585625" y2="33.3112" width="0.6096" layer="1"/>
@@ -655,10 +655,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="+3V3">
 <contactref element="ESPLEFT" pad="1"/>
-<contactref element="CON-HUB1" pad="2"/>
-<contactref element="CON-HUB2" pad="2"/>
-<contactref element="CON-HUB3" pad="2"/>
 <contactref element="CON-HUB4" pad="2"/>
+<contactref element="CON-HUB3" pad="2"/>
+<contactref element="CON-HUB2" pad="2"/>
+<contactref element="CON-HUB1" pad="2"/>
 <contactref element="S1" pad="1"/>
 <contactref element="U$1" pad="2"/>
 <wire x1="15.24" y1="12.7" x2="15.24" y2="13.97" width="0.6096" layer="1"/>
@@ -699,10 +699,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="SDA">
 <contactref element="ESPLEFT" pad="3"/>
-<contactref element="CON-HUB1" pad="3"/>
-<contactref element="CON-HUB2" pad="3"/>
-<contactref element="CON-HUB3" pad="3"/>
 <contactref element="CON-HUB4" pad="3"/>
+<contactref element="CON-HUB3" pad="3"/>
+<contactref element="CON-HUB2" pad="3"/>
+<contactref element="CON-HUB1" pad="3"/>
 <wire x1="17.78" y1="13.97" x2="17.78" y2="12.7" width="0.6096" layer="1"/>
 <wire x1="17.78" y1="12.7" x2="20.32" y2="10.16" width="0.6096" layer="1"/>
 <wire x1="20.32" y1="10.16" x2="35.56" y2="10.16" width="0.6096" layer="1"/>
@@ -718,10 +718,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="SCL">
 <contactref element="ESPLEFT" pad="4"/>
-<contactref element="CON-HUB4" pad="4"/>
-<contactref element="CON-HUB3" pad="4"/>
-<contactref element="CON-HUB2" pad="4"/>
 <contactref element="CON-HUB1" pad="4"/>
+<contactref element="CON-HUB2" pad="4"/>
+<contactref element="CON-HUB3" pad="4"/>
+<contactref element="CON-HUB4" pad="4"/>
 <wire x1="20.32" y1="12.7" x2="20.32" y2="13.97" width="0.6096" layer="1"/>
 <wire x1="20.32" y1="12.7" x2="21.59" y2="11.43" width="0.6096" layer="1"/>
 <wire x1="21.59" y1="11.43" x2="34.29" y2="11.43" width="0.6096" layer="1"/>
@@ -734,22 +734,30 @@ design rules under a new name.</description>
 <wire x1="20.32" y1="29.21" x2="20.32" y2="36.83" width="0.6096" layer="1"/>
 </signal>
 <signal name="LED1">
-<contactref element="ESPLEFT" pad="13"/>
+<contactref element="ESPLEFT" pad="10"/>
 <contactref element="CON-HUB1" pad="6"/>
-<wire x1="25.4" y1="36.83" x2="26.67" y2="36.83" width="0.6096" layer="1"/>
-<wire x1="26.67" y1="36.83" x2="29.21" y2="34.29" width="0.6096" layer="1"/>
-<wire x1="29.21" y1="34.29" x2="29.21" y2="24.13" width="0.6096" layer="1"/>
-<wire x1="29.21" y1="24.13" x2="31.75" y2="21.59" width="0.6096" layer="1"/>
-<wire x1="31.75" y1="21.59" x2="52.07" y2="21.59" width="0.6096" layer="1"/>
-<wire x1="52.07" y1="21.59" x2="54.61" y2="19.05" width="0.6096" layer="1"/>
-<wire x1="54.61" y1="19.05" x2="67.31" y2="19.05" width="0.6096" layer="1"/>
-<wire x1="67.31" y1="19.05" x2="72.39" y2="13.97" width="0.6096" layer="1"/>
-<wire x1="72.39" y1="13.97" x2="72.39" y2="12.7" width="0.6096" layer="1"/>
+<wire x1="34.29" y1="13.97" x2="25.4" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="34.29" y1="13.97" x2="38.1" y2="17.78" width="0.6096" layer="1"/>
+<wire x1="38.1" y1="17.78" x2="48.26" y2="17.78" width="0.6096" layer="1"/>
+<wire x1="48.26" y1="17.78" x2="50.8" y2="15.24" width="0.6096" layer="1"/>
+<wire x1="50.8" y1="15.24" x2="63.5" y2="15.24" width="0.6096" layer="1"/>
+<wire x1="63.5" y1="15.24" x2="64.77" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="64.77" y1="13.97" x2="64.77" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED2">
-<contactref element="ESPLEFT" pad="12"/>
+<contactref element="ESPLEFT" pad="11"/>
 <contactref element="CON-HUB2" pad="6"/>
-<wire x1="69.85" y1="12.7" x2="69.85" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="67.31" y1="13.97" x2="64.77" y2="16.51" width="0.6096" layer="1"/>
+<wire x1="64.77" y1="16.51" x2="52.07" y2="16.51" width="0.6096" layer="1"/>
+<wire x1="52.07" y1="16.51" x2="49.53" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="49.53" y1="19.05" x2="29.21" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="29.21" y1="19.05" x2="26.67" y2="21.59" width="0.6096" layer="1"/>
+<wire x1="26.67" y1="21.59" x2="25.4" y2="21.59" width="0.6096" layer="1"/>
+<wire x1="67.31" y1="13.97" x2="67.31" y2="12.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LED3">
+<contactref element="ESPLEFT" pad="12"/>
+<contactref element="CON-HUB3" pad="6"/>
 <wire x1="69.85" y1="13.97" x2="66.04" y2="17.78" width="0.6096" layer="1"/>
 <wire x1="66.04" y1="17.78" x2="53.34" y2="17.78" width="0.6096" layer="1"/>
 <wire x1="53.34" y1="17.78" x2="50.8" y2="20.32" width="0.6096" layer="1"/>
@@ -758,34 +766,26 @@ design rules under a new name.</description>
 <wire x1="27.94" y1="27.94" x2="26.67" y2="29.21" width="0.6096" layer="1"/>
 <wire x1="26.67" y1="29.21" x2="25.4" y2="29.21" width="0.6096" layer="1"/>
 <wire x1="27.94" y1="22.86" x2="27.94" y2="27.94" width="0.6096" layer="1"/>
-</signal>
-<signal name="LED3">
-<contactref element="ESPLEFT" pad="11"/>
-<contactref element="CON-HUB3" pad="6"/>
-<wire x1="67.31" y1="12.7" x2="67.31" y2="13.97" width="0.6096" layer="1"/>
-<wire x1="67.31" y1="13.97" x2="64.77" y2="16.51" width="0.6096" layer="1"/>
-<wire x1="64.77" y1="16.51" x2="52.07" y2="16.51" width="0.6096" layer="1"/>
-<wire x1="52.07" y1="16.51" x2="49.53" y2="19.05" width="0.6096" layer="1"/>
-<wire x1="49.53" y1="19.05" x2="29.21" y2="19.05" width="0.6096" layer="1"/>
-<wire x1="29.21" y1="19.05" x2="26.67" y2="21.59" width="0.6096" layer="1"/>
-<wire x1="26.67" y1="21.59" x2="25.4" y2="21.59" width="0.6096" layer="1"/>
+<wire x1="69.85" y1="13.97" x2="69.85" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED4">
-<contactref element="ESPLEFT" pad="10"/>
+<contactref element="ESPLEFT" pad="13"/>
 <contactref element="CON-HUB4" pad="6"/>
-<wire x1="34.29" y1="13.97" x2="25.4" y2="13.97" width="0.6096" layer="1"/>
-<wire x1="34.29" y1="13.97" x2="38.1" y2="17.78" width="0.6096" layer="1"/>
-<wire x1="38.1" y1="17.78" x2="48.26" y2="17.78" width="0.6096" layer="1"/>
-<wire x1="48.26" y1="17.78" x2="50.8" y2="15.24" width="0.6096" layer="1"/>
-<wire x1="50.8" y1="15.24" x2="63.5" y2="15.24" width="0.6096" layer="1"/>
-<wire x1="63.5" y1="15.24" x2="64.77" y2="13.97" width="0.6096" layer="1"/>
-<wire x1="64.77" y1="13.97" x2="64.77" y2="12.7" width="0.6096" layer="1"/>
+<wire x1="25.4" y1="36.83" x2="26.67" y2="36.83" width="0.6096" layer="1"/>
+<wire x1="26.67" y1="36.83" x2="29.21" y2="34.29" width="0.6096" layer="1"/>
+<wire x1="29.21" y1="34.29" x2="29.21" y2="24.13" width="0.6096" layer="1"/>
+<wire x1="29.21" y1="24.13" x2="31.75" y2="21.59" width="0.6096" layer="1"/>
+<wire x1="31.75" y1="21.59" x2="52.07" y2="21.59" width="0.6096" layer="1"/>
+<wire x1="52.07" y1="21.59" x2="54.61" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="54.61" y1="19.05" x2="67.31" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="67.31" y1="19.05" x2="72.39" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="72.39" y1="13.97" x2="72.39" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
-<contactref element="CON-HUB1" pad="1"/>
-<contactref element="CON-HUB2" pad="1"/>
-<contactref element="CON-HUB3" pad="1"/>
 <contactref element="CON-HUB4" pad="1"/>
+<contactref element="CON-HUB3" pad="1"/>
+<contactref element="CON-HUB2" pad="1"/>
+<contactref element="CON-HUB1" pad="1"/>
 <contactref element="J1" pad="PIN"/>
 <contactref element="U$1" pad="3"/>
 <wire x1="67.524975" y1="21.819" x2="62.941" y2="21.819" width="0.6096" layer="1"/>

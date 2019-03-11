@@ -60,7 +60,6 @@ A particular challenge has been deciding between a large single circuit board or
 The control modules needs to:
 
 The first one was designed to use a esp32 dev board (specifically, the lolin32 lite). However, I think it would be better to use an atmega328p instead.
+]
 
-!(control board)[https://github.com/harryiliffe/interactive-wall/tree/master/boards/compute%20hub%20-%20atmega/exports/computehub.png]
-
-{% include image.html id="control board" images="https://github.com/harryiliffe/interactive-wall/tree/master/boards/compute%20hub%20-%20atmega/exports/computehub.png" caption="The control board circuit" %} 
+{% include image.html id="control board" images="https://github.com/harryiliffe/interactive-wall/tree/master/boards/compute%20hub%20-%20atmega/exports/computehub.png" caption="The control board circuit" %}

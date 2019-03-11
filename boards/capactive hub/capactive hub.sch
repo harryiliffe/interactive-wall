@@ -1221,6 +1221,7 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <segment>
 <pinref part="CON1" gate="A" pin="5"/>
 <wire x1="111.76" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
+<label x="104.14" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAP2" class="0">
@@ -1409,14 +1410,16 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <segment>
 <pinref part="CON1" gate="A" pin="4"/>
 <wire x1="111.76" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<label x="104.14" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="LEDOUT" class="0">
 <segment>
 <pinref part="CON1" gate="A" pin="3"/>
 <pinref part="CON2" gate="A" pin="4"/>
 <wire x1="111.76" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="96.52" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
+<label x="104.14" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="0">
