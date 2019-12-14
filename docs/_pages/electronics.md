@@ -56,8 +56,17 @@ The button circuit board needs to:
 
 A particular challenge has been deciding between a large single circuit board or multiply smaller ones. We knew that we wanted the LEDs at the top and bottom as well as around the circle in the middle but were stuck on how to achieve this. One option is to create a circuit board that covers the whole area but this uses a lot of unnecessary material. The other option is to create smaller circuit boards and join them with wires but this will take a much longer time.
 
+## Capacitive Module
+The capacitive module needs to:
+ * Connect to each of the Buttons
+ * Distribute power and connect the LEDs on the Buttons
+ * Break out the MPR121 board for capactive touch
+ * Connect to the control module via i2c and the led data lines
+ 
 ## Control Module
 The control modules needs to:
+ * Talk to the capacitive touch board
+ * Connect everything
 
 The first one was designed to use a esp32 dev board (specifically, the lolin32 lite). However, I think it would be better to use an atmega328p instead.
 ]
