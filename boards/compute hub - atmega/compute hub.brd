@@ -45,8 +45,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
@@ -758,7 +758,6 @@ design rules under a new name.</description>
 <signals>
 <signal name="GND">
 <contactref element="S1" pad="3"/>
-<contactref element="J1" pad="SHUNT"/>
 <contactref element="CON-HUB3" pad="5"/>
 <contactref element="CON-HUB2" pad="5"/>
 <contactref element="CON-HUB1" pad="5"/>
@@ -832,9 +831,14 @@ design rules under a new name.</description>
 <wire x1="17.624" y1="63.15279375" x2="17.87279375" y2="62.904" width="0.254" layer="1"/>
 <wire x1="17.624" y1="75.617575" x2="17.624" y2="63.15279375" width="0.254" layer="1"/>
 <wire x1="28.575" y1="60.071" x2="28.575" y2="68.308575" width="0.254" layer="1"/>
-<wire x1="28.575" y1="68.308575" x2="20.4871375" y2="76.3964375" width="0.254" layer="1"/>
+<wire x1="28.575" y1="68.308575" x2="20.592" y2="76.291575" width="0.254" layer="1"/>
 <wire x1="28.575" y1="68.308575" x2="28.575" y2="74.8538" width="0.254" layer="1"/>
-<wire x1="28.575" y1="74.8538" x2="35.052" y2="81.3308" width="0.254" layer="1"/>
+<contactref element="J1" pad="CONTACT"/>
+<wire x1="28.575" y1="74.8538" x2="32.4612" y2="78.74" width="0.254" layer="1"/>
+<wire x1="32.4612" y1="78.74" x2="40.005" y2="78.74" width="0.254" layer="1"/>
+<wire x1="40.005" y1="78.74" x2="41.275" y2="80.01" width="0.254" layer="1"/>
+<wire x1="41.275" y1="81.2038" x2="41.148" y2="81.3308" width="0.254" layer="1"/>
+<wire x1="41.275" y1="80.01" x2="41.275" y2="81.2038" width="0.254" layer="1"/>
 </signal>
 <signal name="CONFIG">
 <contactref element="S1" pad="2"/>
@@ -1020,13 +1024,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="SCK">
 <contactref element="AVRISP" pad="3"/>
-<wire x1="18.415" y1="59.055" x2="18.415" y2="58.812575" width="0.254" layer="1"/>
 <contactref element="IC2" pad="17"/>
-<wire x1="17.137709375" y1="57.535284375" x2="18.415" y2="58.812575" width="0.254" layer="1"/>
-<wire x1="17.106" y1="55.526425" x2="17.106" y2="57.503575" width="0.254" layer="1"/>
-<wire x1="17.106" y1="57.503575" x2="17.137709375" y2="57.535284375" width="0.254" layer="1"/>
-<wire x1="17.8562" y1="49.155" x2="17.8562" y2="54.776225" width="0.254" layer="1"/>
-<wire x1="17.8562" y1="54.776225" x2="17.106" y2="55.526425" width="0.254" layer="1"/>
+<wire x1="17.8562" y1="49.155" x2="16.885" y2="49.155" width="0.254" layer="1"/>
+<wire x1="16.885" y1="49.155" x2="16.51" y2="49.53" width="0.254" layer="1"/>
+<wire x1="16.51" y1="49.53" x2="16.51" y2="56.83181875" width="0.254" layer="1"/>
+<wire x1="16.51" y1="56.83181875" x2="17.106" y2="57.42781875" width="0.254" layer="1"/>
+<wire x1="17.106" y1="57.42781875" x2="17.106" y2="57.503575" width="0.254" layer="1"/>
+<wire x1="17.106" y1="57.503575" x2="17.21090625" y2="57.60848125" width="0.254" layer="1"/>
+<wire x1="17.21090625" y1="57.60848125" x2="17.21090625" y2="57.85090625" width="0.254" layer="1"/>
+<wire x1="17.21090625" y1="57.85090625" x2="18.415" y2="59.055" width="0.254" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="AVRISP" pad="4"/>

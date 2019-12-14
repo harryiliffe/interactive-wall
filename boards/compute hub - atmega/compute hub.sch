@@ -1209,8 +1209,8 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <instance part="J1" gate="G$1" x="114.3" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="109.3486" y="73.66" size="1.9304" layer="95" rot="R90"/>
 </instance>
-<instance part="GND12" gate="1" x="111.76" y="83.82" smashed="yes" rot="R180">
-<attribute name="VALUE" x="114.3" y="86.36" size="1.778" layer="96" rot="R180"/>
+<instance part="GND12" gate="1" x="116.84" y="86.36" smashed="yes" rot="R180">
+<attribute name="VALUE" x="119.38" y="88.9" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+11" gate="1" x="111.76" y="68.58" smashed="yes" rot="R180">
 <attribute name="VALUE" x="114.3" y="73.66" size="1.778" layer="96" rot="R270"/>
@@ -1341,10 +1341,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <wire x1="134.62" y1="96.52" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="SHUNT"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="CON-HUB3" gate="A" pin="5"/>
 <wire x1="40.64" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
@@ -1416,6 +1412,11 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <wire x1="180.34" y1="134.62" x2="180.34" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="FTDI" gate="A" pin="2"/>
 <wire x1="180.34" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="CONTACT"/>
+<wire x1="116.84" y1="83.82" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CONFIG" class="0">
@@ -1767,6 +1768,7 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="P+10" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$5" class="0">
